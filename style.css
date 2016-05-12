@@ -32,17 +32,23 @@ body {
 }
 
 .header .header-wrapper {
-	background: url(images/head.bck.jpg) no-repeat;
-	background-size: 100%;
+	position: relative;
+}
+
+.header-wrapper .head-bck {
 	padding: 0;
-	height: 730px;
+	width: 100%;
 }
 
 
 .header-wrapper .menu-container {
 	margin: 30px 0 0 0;
 	background-color: rgba(86,53,96, 0.9);
-	min-height: 66px;
+	padding: 0;
+	position: absolute; 
+	top: 20px; 
+	left: 0;
+	width: 100%;
 }
 
 .menu-container .logo-container {
@@ -51,6 +57,7 @@ body {
 
 .logo-container .logo {
 	padding: 0;
+	padding-right: 5px;
 	display: inline-block;
 	float: left;
 }
@@ -67,7 +74,7 @@ body {
 .title-container h1 {
 	color: #FFF;
 	margin: 0;
-	font-size: 25px;
+	font-size: 22px;
     padding-top: 8px;
 }
 
@@ -75,18 +82,26 @@ body {
 	color: #f2f2f2;
 	margin: 0;
     font-size: 17px;
+    float: left;
 }
 
 #menu {
-	min-height: 66px;
+	padding-left: 0;
+    padding-right: 0;
+    
 }
 
 #menu .menu-wrapper {
-	padding-top: 20px;
+	padding: 0;
+	margin-top: 15px;
 }
 
 #menu .menu-wrapper .menu-item {
 	display: inline-block;
+    width: 15%;
+    padding: 0;
+    text-align: center;
+    vertical-align: top;
 }
 
 .menu-wrapper .menu-item a {
@@ -104,15 +119,18 @@ body {
 }
 
 .blank-big {
-	height: 290px;
+	height: 550px;
 }
 
 .header-wrapper .donation-container {
-
+	position: absolute;
+	bottom: 80px;
+	left: 50px;
 }
 
 .donation-container .title {
 	padding-bottom: 10px;
+	color: #FFF;
 }
 
 .donation-container .title h3 {
@@ -210,11 +228,13 @@ body {
 	background: none;
 	border: 1px solid #CC249E;
 	padding-left: 15px;
+	color: #8F8F8F;
 }
 
 .register-container .input-wrapper select {
 	background: none;
 	border: 1px solid #CC249E;
+	color: #8F8F8F;
 }
 
 
@@ -445,6 +465,7 @@ body {
 	background: none;
 	border: 1px solid #CC249E;
     padding-left: 15px;
+    color: #8F8F8F;
 }
 
 .content .message-container textarea {
@@ -452,6 +473,7 @@ body {
 	background: none;
 	border: 1px solid #CC249E;
 	height: 120px;
+	color: #8F8F8F;
 }
 
 .footer .btn-footer {
